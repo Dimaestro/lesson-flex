@@ -99,3 +99,61 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 50px;
 }
+
+.wrapper {
+  background-color: rgba(142, 21, 255, 0.681);
+}
+
+.content {
+  padding: 50px;
+}
+.content__circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  position: relative;
+  left: -150px;
+  -webkit-animation-name: white-circle;
+          animation-name: white-circle;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.content:hover .content__circle {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+@-webkit-keyframes white-circle {
+  0% {
+    left: -150px;
+  }
+  50% {
+    left: 400px;
+    border-radius: 0;
+  }
+  100% {
+    left: 950px;
+  }
+}
+@keyframes white-circle {
+  0% {
+    left: -150px;
+  }
+  50% {
+    left: 400px;
+    border-radius: 0;
+  }
+  100% {
+    left: 950px;
+  }
+}
