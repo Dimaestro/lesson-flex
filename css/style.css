@@ -71,3 +71,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.btn {
+  width: 200px;
+  height: 50px;
+  margin: 50px auto;
+  position: relative;
+  top: 0;
+  background-color: aqua;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px rgb(7, 122, 122);
+  transition-duration: 700ms, 1s, 500ms;
+  transition-property: box-shadow, background-color, top;
+  transition-delay: 100ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.btn:hover {
+  box-shadow: 1px 2px 2px rgb(3, 81, 81);
+  background-color: rgba(13, 155, 155, 0.72);
+  top: 2px;
+}
+.btn__text {
+  color: rgb(202, 226, 247);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 50px;
+}
