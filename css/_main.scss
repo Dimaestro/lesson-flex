@@ -73,3 +73,28 @@
       }
     }
 }
+
+//* Adaptive image
+.text {
+
+  // .text__title
+
+  &__title {
+    text-align: center;
+    margin: 30px 0 30px 0;
+  }
+
+  // .text__image
+
+  &__image {
+  }
+
+  // .text__value
+
+  &__value {
+  }
+}
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
