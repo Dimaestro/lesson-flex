@@ -76,7 +76,11 @@
 
 //* Adaptive image
 .text {
-
+  max-width: 1330px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px 15px;
+  text-align: center;
   // .text__title
 
   &__title {
@@ -88,11 +92,19 @@
 
   &__image {
   }
+  &__image img {
+    max-width: 100%;
+  }
 
   // .text__value
 
   &__value {
+    margin: 50px 0 50px 0;
   }
+  &__value p {
+    margin: 0 0 20px 0;
+  }
+  
 }
 .title {
   font-size: 30px;
